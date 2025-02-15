@@ -1,3 +1,4 @@
+add_subdirectory( adrenotools )
 add_library(CemuAndroid SHARED
         AndroidAudio.cpp
         AndroidEmulatedController.cpp
@@ -22,4 +23,5 @@ target_link_libraries(CemuAndroid PRIVATE
         CemuComponents
         CemuCafe
         CemuBin
+        adrenotools
 )
